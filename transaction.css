@@ -1,0 +1,183 @@
+ 
+.navbar {
+    overflow: hidden;
+    background-color: #3f4e41;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2cm;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a, .dropdown .dropbtn {
+    font-size: 16px;
+    color: #a0b39c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid #000000;
+    margin-left: 10px;
+}
+hea
+
+.nav-links a:hover, .dropdown:hover .dropbtn {
+    background-color: #638360;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a5c0ab;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #79b67333;
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #6d4949;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Playfair Display;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a7a5d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ body {
+    font-family: Playfair Display;
+    font-size: 17px;
+    padding: px;
+    color: #a1aaa1;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+
+
+  /* Transactions page */
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 200px 15px 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    color: #60b394;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #29443a;
+    color: #ffffff;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #416643;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid #961a1a;
+  }
+  
+  span.price {
+    float: right;
+    color: #808080;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .row .col-75 {
+    color: #000000;
+  }
+
+  .col-25 .container {
+    float: right;
+    padding: 30px;
+    width: 100%;
+  }
